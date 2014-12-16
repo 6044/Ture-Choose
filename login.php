@@ -13,9 +13,11 @@
 			echo 'you are not registered yet!click here <a href="sign_up.html;">register</a>';
 		else
 		{
+			$row=mysql_fetch_array ($result);
 			$_SESSION['username']=$username;
-			$_SESSION['id']=$result['id'];
-			header('Location:index.html');
+			$_SESSION['id']=$row['id'];
+			echo 
+			header('Location:index.php');
 		}
 		mysql_close($conn);
 			

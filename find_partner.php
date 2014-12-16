@@ -1,3 +1,7 @@
+<?php
+	session_start();
+	if(!$_SESSION["id"]) header("Location:login.html");
+?>	
 <html>
 <head>
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
