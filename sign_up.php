@@ -7,8 +7,6 @@
 	</head>
 <body>
 <?php
-	if (!isset($_POST['submit']))
-		exit ('非法访问');
 	include "connect_db.php";
 		$username=$_POST['username'];
 		$age=$_POST['age'];

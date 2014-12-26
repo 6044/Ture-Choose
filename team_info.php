@@ -6,6 +6,15 @@
    <script src="sjs/bootstrap.min.js"></script>
 </head>
 <body>
+<link href="images/style1.css" rel="stylesheet" type="text/css" />
+<ul id="nav">
+    <li><a href="index.php">首页</a></li>
+    <li><a href="partner.php">驴友组队</a></li>
+    <li><a href="rocboss/index.php">驴友社区</a></li>
+    <li><a href="gonglv/index.php">旅游攻略</a></li>
+    <li><a href="in.php">路线评价</a></li>
+    <li><a href="logout.php">退出</a></li>
+</ul>
 	<table class="table table-boeder table-hover">
 		<tr>
 			<th>Userame</th>
@@ -15,9 +24,9 @@
 		</tr>
 		
 <?php
-$team=$_GET['team'];
+$teamid=$_GET['teamid'];
 include "connect_db.php";
-$result=mysql_query("select * from login where team='$team'");
+$result=mysql_query("select * from login where teamid='$teamid'");
 while ($row=mysql_fetch_array($result))
 {
 	echo "<tr>";

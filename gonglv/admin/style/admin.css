@@ -1,0 +1,21 @@
+body{
+    margin:0;
+    padding:0;
+    background-color:#B5C7EF;
+    color: #FFFFFF;
+    font-size:16px;
+}
+#login{
+    margin-top:100px;
+    width:910px;
+    height:410px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    background-image:url("../images/login.jpg");
+}
+table{
+    padding-left: 328px !important;
+    padding-top:93px !important; 
+    margin-top:93px;
+}

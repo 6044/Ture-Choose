@@ -1,0 +1,78 @@
+#user_main
+{
+    width:960px;
+    height:550px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: #FFFFFF;
+    margin-top:1px;
+       
+}
+
+
+#admin
+{
+    width:960px;
+    height:550px;
+    float:right;
+}
+
+#admin_top
+{
+    width:960px;
+    height:26px;
+    background-color:#B0D8FF;
+    text-align:left;
+    color: #003060;
+    font-size:14px;
+    font-weight:bold;
+}
+#admin_top a
+{
+    text-decoration: none;
+    background:none;
+    color: #003060;
+}
+
+
+
+#admin_main
+{
+    font-size:14px;
+    color: #5A5A5A;
+    text-align:left;
+    margin-top:5px;
+    width:960px;
+    height:500px;
+    
+}
+
+
+
+
+#urltop a
+{
+    background:none;
+    text-decoration:none;
+    color:red;
+    font-size:12px;
+    padding-right:20px;
+    
+}
+
+
+
+
+
+
+#bottom
+{
+    width:960px;
+    height:80px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    line-height: 80px;
+    background-color: #EEEEEE;
+}
+

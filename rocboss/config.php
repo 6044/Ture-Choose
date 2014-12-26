@@ -3,24 +3,24 @@
 
 //数据库配置项
 $db_config = array(
-				'db_host' => 'localhost',
-				'db_user' => 'root',
-				'db_pass' => '',
-				'db_name' => 'rocboss',
-				'db_pre'	=>	'roc_',
-				'db_code' => 'utf8',
+				'db_host' 	=>  'w.rdc.sae.sina.com.cn:3307/app_hit6044',
+				'db_user' 	=>  '55005532ko',
+				'db_pass' 	=>  '120x3x512ilxlhm15kxwilz0lx2mzwz5z0zhjj13',
+				'db_name' 	=>  'app_hit6044',
+				'db_pre'	=>  'roc_',
+				'db_code' 	=>  'utf8',
 				'db_switch' => 	'true',
 				'db_long'	=>	'false'
 				);
 
 //常规配置项
 $roc_config = array(
-	'sitename'	=> 'HIT-驴友社区',			// *网站名称
-	'siteicp'	=> 'HIT-888888',			//  网站备案号
+	'sitename'	=> 'ROCBOSS微社区',			// *网站名称
+	'siteicp'	=> '京ICP8888888',			//  网站备案号
 	'smtp'		=> '',						//  系统smtp服务器
 	'sitemail'	=> '', 						//  系统邮箱地址
 	'mailpwd'	=> '',						//  系统邮箱密码
-	'version'	=> 'V1.0',					//  系统当前版本
+	'version'	=> 'V1.1',					//  系统当前版本
 	'emailjoin'	=> 1,						// *是否允许用户注册, 1 允许 , 0 禁止
 	'secure_key'=> '&%cs50sd#fr2014',		// *网站密钥,不少于12位
 	'lock_mod'	=> '0',						// *本站私密版块ID，多个用 , 隔开，默认留 0

@@ -2,7 +2,8 @@
 session_start();
 //echo $_SESSION['id'];
 	if(!$_SESSION["id"]) header("Location:login.html");
-
+	//include ("nav.html");
+	//echo "nav.html";
 ?>
 <html>
 <head>
@@ -12,9 +13,18 @@ session_start();
    <script src="sjs/bootstrap.min.js"></script>
 </head>
 <body>
+<link href="images/style1.css" rel="stylesheet" type="text/css" />
+<ul id="nav">
+    <li><a href="index.php">首页</a></li>
+    <li><a href="partner.php">驴友组队</a></li>
+    <li><a href="rocboss/index.php">驴友社区</a></li>
+    <li><a href="gonglv/index.php">旅游攻略</a></li>
+    <li><a href="in.php">路线评价</a></li>
+    <li><a href="logout.php">退出</a></li>
+</ul>
 <table class="table table-border table-hover">
 							<tr>
-								<th>sum</th>
+								
 								<th>time</th>
 								<th>place</th>
 								<th>phone</th>
@@ -26,31 +36,33 @@ session_start();
 	$result=mysql_query("select * from partner");
 	while ($row=mysql_fetch_array($result))
 	{
-		$phone=$row['phone'];
+		$teamid=$row['teamid'];
 		$id=$_SESSION['id'];
-		//echo $phone;
+		$sum=0;
+		$sum_result=mysql_query("select * from login where teamid='$teamid'");
+		
+		while ($row2=mysql_fetch_array ($sum_result))
+			$sum++;
 		echo "<tr>";
-			echo "<td>" . $row['sum'] . "</td>";
+			//echo "<td>" . $sum . "</td>";
 			echo "<td>" . $row['time'] . "</td>";
 			echo "<td>" . $row['place'] . "</td>";
 			echo "<td>" . $row['phone'] . "</td>";
-?>
+		?>
 
 			<td><form action="<?php echo $_SERVER["PHP_SELF"];?>" method = "post">
 						<button type="submit" name="submit" class="btn">Join in</button>
 						</form></td>
-<?php
-			echo '<td><a href="team_info.php? team='.$phone.'">Detail</a></td>';
+		<?php
+			echo '<td><a href="team_info.php? teamid='.$teamid.'">Detail</a></td>';
 					
 		echo "</tr>";
-		
+		//join in a team
 		if (isset($_POST['submit']))
 		{
-			$sum=$row['sum']+1;
-			$place=$row['place'];
-			//echo $place;
-			$join_result=mysql_query("update partner set sum='$sum' where place='$place'");
-			$join_team=mysql_query ("update login set team='$phone' where id='$id'");
+			
+			//update personnal information of teamid to join in
+			$join_team=mysql_query ("update login set teamid='$teamid' where id='$id'");
 		}
 	}
 	echo "</table>";

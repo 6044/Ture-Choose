@@ -1,5 +1,4 @@
-
-	<?php
+<?php
 	session_start();
 	//登陆
 	//if (!isset($_POST['submit']))
@@ -16,8 +15,7 @@
 			$row=mysql_fetch_array ($result);
 			$_SESSION['username']=$username;
 			$_SESSION['id']=$row['id'];
-			echo 
-			header('Location:index.php');
+header('Location:index.php');
 		}
 		mysql_close($conn);
 			

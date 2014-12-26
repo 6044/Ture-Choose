@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+
+
+.jumbotron{
+			width: 95%;
+			//height: 100px;
+        	margin-top: 20px;
+        	border-radius: 4px;
+        	border: 2px solid #ddd;
+        	box-shadow: 0 0px 5px #ddd;
+        	background-color: #ddf;
+        	}
+.foot{
+			
+			height: 60px;line-height: 25px;color: #bbb;
+			text-align: center;
+			border-top: 0.5px solid #ececec;
+			margin-top: 200px;
+		}
+.shen{
+			display: none;
+			border-style: solid;
+			width: 115px;
+			height: 20px;
+			color: pink;
+			border-color: purple;
+		}
+.form{
+			position: relative;
+			right: -70%;
+			box-shadow: 0 30px 3px #dde;
+			border: 3px solid #dde;
+			background-color: #dde;
+			margin-right: 10%;
+}
+.form-group{
+	text-indent: 8px;
+}
