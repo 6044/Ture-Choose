@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<siteConfig>
+<title>Very Cool路线评价</title>
+
+<adminuser>someone</adminuser>
+<adminpass>123456</adminpass>
+<dbhost>w.rdc.sae.sina.com.cn:3307/app_hit6044</dbhost>
+<dbuser>55005532ko</dbuser>
+<dbpass>120x3x512ilxlhm15kxwilz0lx2mzwz5z0zhjj13</dbpass>
+<pagesize>2</pagesize>
+</siteConfig>
